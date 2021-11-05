@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <div style={{ padding: 120, background: '#E6E6E6' }}>
+      <div style={{ padding: '8vw', background: '#E6E6E6' }}>
         <Routes>
           <Route path="/my-offices" element={<OfficeSpaces />} />
         </Routes>

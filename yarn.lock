@@ -1537,6 +1537,11 @@
     "schema-utils" "^2.6.5"
     "source-map" "^0.7.3"
 
+"@react-hook/media-query@^1.1.1":
+  "integrity" "sha512-VM14wDOX5CW5Dn6b2lTiMd79BFMTut9AZj2+vIRT3LCKgMCYmdqruTtzDPSnIVDQdtxdPgtOzvU9oK20LopuOw=="
+  "resolved" "https://registry.npmjs.org/@react-hook/media-query/-/media-query-1.1.1.tgz"
+  "version" "1.1.1"
+
 "@restart/hooks@^0.3.26":
   "integrity" "sha512-s984xV/EapUIfkjlf8wz9weP2O9TNKR96C68FfMEy2bE69+H4cNv3RD4Mf97lW7Htt7PjZrYTjSC8f3SB9VCXw=="
   "resolved" "https://registry.npmjs.org/@restart/hooks/-/hooks-0.3.27.tgz"

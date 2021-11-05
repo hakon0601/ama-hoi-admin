@@ -17,8 +17,8 @@ export const Header = () => {
           justifyContent: 'space-between',
           alignItems: 'center',
           height: 158,
-          paddingLeft: 120,
-          paddingRight: 120,
+          paddingLeft: '8vw',
+          paddingRight: '8vw',
         }}
       >
         <div
@@ -56,8 +56,8 @@ export const Header = () => {
           background: '#005763',
           color: 'white',
           height: 70,
-          paddingLeft: 120,
-          paddingRight: 120,
+          paddingLeft: '8vw',
+          paddingRight: '8vw',
           display: 'flex',
           justifyContent: 'left',
           alignItems: 'center',

@@ -1,14 +1,17 @@
+import { useMediaQuery } from '@react-hook/media-query';
 import React from 'react';
 
 export const Footer = () => {
+  const isPhone = useMediaQuery('only screen and (max-width: 600px)');
+
   return (
     <div
       style={{
         height: 318,
         background: '#005763',
         color: 'white',
-        paddingLeft: 120,
-        paddingRight: 120,
+        paddingLeft: '8vw',
+        paddingRight: '8vw',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -36,7 +39,7 @@ export const Footer = () => {
         <div
           style={{
             display: 'flex',
-            flexDirection: 'row',
+            flexDirection: isPhone ? 'column' : 'row',
             justifyContent: 'space-between',
             width: '100%',
           }}

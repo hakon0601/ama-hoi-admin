@@ -1,8 +1,11 @@
+import { useMediaQuery } from '@react-hook/media-query';
 import React from 'react';
 import { TextAreaInput } from '../../components/TextAreaInput';
 import { TextInput } from '../../components/TextInput';
 
 export const OfficeDescription = () => {
+  const isPhone = useMediaQuery('only screen and (max-width: 600px)');
+
   return (
     <div
       style={{
@@ -22,7 +25,7 @@ export const OfficeDescription = () => {
       <div
         style={{
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: isPhone ? 'column' : 'row',
           gap: 15,
           marginTop: 20,
         }}

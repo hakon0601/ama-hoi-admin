@@ -1,6 +1,12 @@
 import React from 'react';
 
-export const TextInput = ({ onFieldChange, placeholder, title, flexSize }) => {
+export const TextInput = ({
+  onFieldChange,
+  placeholder,
+  title,
+  flexSize,
+  value,
+}) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', flex: flexSize }}>
       <div style={{ color: '#232F3A', fontSize: 16, marginBottom: 10 }}>
@@ -8,8 +14,9 @@ export const TextInput = ({ onFieldChange, placeholder, title, flexSize }) => {
       </div>
       <input
         style={{ border: '1px solid grey', borderRadius: 0, padding: 8 }}
-        onChange={(event) => onFieldChange(event.target.input)}
+        onChange={(event) => onFieldChange(event.target.value)}
         placeholder={placeholder}
+        value={value}
       />
     </div>
   );

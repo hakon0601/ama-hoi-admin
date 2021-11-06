@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-export const Facilities = ({ flexSize }) => {
+export const Facilities = ({ flexSize, office }) => {
   const [selectedFacilities, setSelectedFacilities] = useState([]);
   const [selectedFacility, setSelectedFacility] = useState(null);
   const facilities = [
@@ -16,11 +16,17 @@ export const Facilities = ({ flexSize }) => {
     'Stillerom',
     'Chilinøtter',
     'Kake',
+    'coffee machine',
   ];
 
   const addFacilitiy = (facility) => {
     setSelectedFacilities([...selectedFacilities, facility]);
   };
+
+  useEffect(() => {
+    setSelectedFacilities(office?.facilities ?? []);
+  }, [office]);
+
   return (
     <div
       style={{
@@ -92,6 +98,7 @@ export const Facilities = ({ flexSize }) => {
                 flexDirection: 'row',
                 justifyContent: 'space-between',
               }}
+              key={title}
             >
               <div
                 style={{

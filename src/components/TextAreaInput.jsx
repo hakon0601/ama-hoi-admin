@@ -5,6 +5,7 @@ export const TextAreaInput = ({
   placeholder,
   title,
   flexSize,
+  value,
 }) => {
   const [charactersEntered, setCharactersEntered] = useState(0);
 
@@ -21,6 +22,7 @@ export const TextAreaInput = ({
           onFieldChange(content);
         }}
         placeholder={placeholder}
+        value={value}
       />
       <div
         style={{

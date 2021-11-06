@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput } from '../../components/TextInput';
 
-export const AvailableSpaces = ({ flexSize }) => {
+export const AvailableSpaces = ({ flexSize, office }) => {
   return (
     <div
       style={{
@@ -19,6 +19,7 @@ export const AvailableSpaces = ({ flexSize }) => {
           placeholder="Tall"
           title="Plasser bekreftet i bruk"
           onFieldChange={() => {}}
+          value={office.capacity - office.available_seats}
         />
         <TextInput
           placeholder="Tall"
@@ -29,6 +30,7 @@ export const AvailableSpaces = ({ flexSize }) => {
           placeholder="Tall"
           title="Antall ledige plasser"
           onFieldChange={() => {}}
+          value={office.capacity}
         />
         <TextInput
           placeholder="Tall"

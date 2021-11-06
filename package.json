@@ -2,6 +2,7 @@
   "name": "dagens-kontor-admin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hakon0601.github.io/ama-hoi-admin/",
   "dependencies": {
     "@carbon/icons-react": "^10.42.0",
     "@react-hook/media-query": "^1.1.1",

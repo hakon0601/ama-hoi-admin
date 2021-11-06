@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <div style={{ padding: '8vw', background: '#E6E6E6' }}>
         <Routes>
-          <Route path="/my-offices" element={<OfficeSpaces />} />
+          <Route path="/" element={<OfficeSpaces />} />
         </Routes>
       </div>
       <Footer />
